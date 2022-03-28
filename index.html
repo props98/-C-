@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <!-- <script src="js/timer.js" defer></script> -->
   <title>Сайт сборки своего ПК</title>
 </head>
 
@@ -25,7 +27,7 @@
           <a href="#">Процесс работы</a>
           <a href="#">Команда</a>
         </nav>
-        <button type="button" class="button header__button">Оставить заявку</button>
+        <button type="button" class="button header__button modal__button">Оставить заявку</button>
       </div>
     </div>
   </header>
@@ -51,7 +53,7 @@
             <div class="timer__text">Секунд</div>
           </div>
         </div>
-        <button class="button main-display__button">Оставить заявку</button>
+        <button class="button main-display__button modal__button">Оставить заявку</button>
       </div>
       <div class="main-display__background">
         <img src="img/main-screen__bgc.png" alt="">
@@ -142,7 +144,7 @@
         <div class="assembly__wrap">
           <h2 class="assembly__header">Закажите свою уникальную сборку</h2>
           <p class="assembly__description">Мы свяжемся с вами, чтобы уточнить детали заказа</p>
-          <button class="button assembly__button">Оставить заявку</button>
+          <button class="button assembly__button modal__button">Оставить заявку</button>
           <div class="assembly__socials">
             <div class="assembly__item">
               <img src="img/vk.svg" alt="">
@@ -154,6 +156,31 @@
         </div>
       </div>
     </section>
+
+    <form action="#" class="modal">
+       <div class="modal__inner">
+         <div class="modal__close">
+           <img src="img/close-icon.svg" alt="">
+         </div>
+         <h3 class="modal__header">Заявка на сборку ПК</h3>
+         <p class="modal__sub">Мы свяжемся с вами, чтобы обсудить детали заказа</p>
+         <div class="modal__elements">
+           <div class="modal__item">
+             <input type="text" class="modal__input" placeholder="Как вас зовут">
+            </div>
+           <div class="modal__item">
+             <input type="tel" class="modal__input" placeholder="Номер телефона">
+            </div>
+           <div class="modal__item">
+             <input type="email" class="modal__input" placeholder="E-mail">
+            </div>
+         </div>
+         <button typoe="submit" class="button main-display__button">Отправить</button>
+       </div>
+    </form>
+
+    <h6>Пpоверка</h6>
+
   </main>
 </body>
 

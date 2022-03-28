@@ -383,3 +383,84 @@ h6 {
 .assembly__socials {
   display: flex;
 }
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 10;
+  padding: 3rem 0;
+  background: rgba(0, 0, 0, .8);
+  display: none;
+}
+
+.modal__inner {
+  position: relative;
+  width: 66.3rem;
+  padding: 9rem 1rem;
+  background: #2C2C2C;
+  text-align: center;
+}
+
+.modal__header {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 140%;
+}
+
+.modal__sub {
+  margin-bottom: 2.8rem;
+  font-weight: 400;
+  font-size: var(--text-size-medium);
+  line-height: 160%;
+  opacity: .5;
+}
+
+.modal__elements {
+  width: 45.4rem;
+  margin: 0 auto;
+  margin: 0 auto 3.2rem auto;
+}
+
+.modal__item {
+  height: 4.4rem;
+}
+
+.modal__input {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 2.78rem;
+  background: grey;
+  border-radius: 5rem;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 160%;
+  color: #fff;
+  opacity: .8;
+}
+
+.modal__item:not(:last-child) {
+  margin-bottom: 1.8rem;
+}
+
+.modal__close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.noscroll {
+  overflow: hidden;
+  height: 100%;
+}
